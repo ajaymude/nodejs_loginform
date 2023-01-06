@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+     <h1>  <%= title %></h1>
+     <h1>  <%= pass %></h1>
+     <h1> <%= email %></h1> 
+    <div>signup form
+        
+     <form action="/register" method="post">
+        <label for="name"> name</label>
+        <input type="text" name="name" placeholder="name">
+
+         <label for="email"> email</label>
+        <input type="text" name="email" placeholder="email">
+
+        
+         <label for="pass"> pass</label>
+        <input type="text" name="pass" placeholder="pass">
+
+        
+        
+         <label for="cpass"> cpass</label>
+        <input type="text" name="cpass" placeholder="cpass">
+        <button type="submit"> submit</button>
+     </form>
+    </div>
+
+
+<hr>
+
+
+    <div> login <form action="/login" method="post">
+            <label for="email">email</label>
+            <input type="text" name="email" placeholder="email">
+
+                 <label for="  pass">pass</label>
+            <input type="text" name="pass" placeholder=" pass">
+            <button type="submit">submit</button>
+
+
+    </form></div>
+</body>
+</html>
